@@ -1,166 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Queen's Closet - Fashion & Beauty</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections – Style</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
-        body {
-            font-family: 'Montserrat', sans-serif;
-            background-color: #faf9f7;
-            color: #333;
-        }
-        .brand-font { font-family: 'Playfair Display', serif; }
-        .pink-gradient {
-            background: linear-gradient(135deg, #f8d5e4 0%, #f3bfd8 50%, #f8d5e4 100%);
-        }
-        .product-hover {
-            transition: all 0.3s ease;
-        }
         .product-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-        .shine {
-            animation: shine 3s ease-in-out infinite alternate;
-        }
-        @keyframes shine {
-            0% { filter: drop-shadow(0 0 5px rgba(255, 192, 203, 0.5)); }
-            100% { filter: drop-shadow(0 0 15px rgba(255, 192, 203, 0.8)); }
-        }
-        .scroll-down {
-            animation: bounce 2s infinite;
-        }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-            40% {transform: translateY(-15px);}
-            60% {transform: translateY(-7px);}
-        }
-        .nav-link {
-            position: relative;
-        }
-        .nav-link:after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background-color: #f472b6;
-            transition: width 0.3s ease;
-        }
-        .nav-link:hover:after {
-            width: 100%;
+            transform: translateY(-4px);
+            transition: transform 0.2s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <i class="fas fa-crown text-xl text-pink-500 shine"></i>
-                <a href="#" class="brand-font text-xl font-bold">QUEEN'S CLOSET</a>
+<body class="bg-gray-50 text-gray-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h2 class="text-3xl font-bold mb-8 text-center">New Season Collections</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Streetwear Essentials -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm product-hover">
+                <div class="h-64 bg-gray-100 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80" alt="Streetwear Essentials" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">Streetwear Essentials</h3>
+                    <p class="text-gray-600 text-sm mb-2">Elevated basics for everyday wear</p>
+                    <p class="text-pink-500 font-medium">From ₦15,000</p>
+                </div>
             </div>
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="#about" class="nav-link text-gray-700 hover:text-pink-500">About</a>
-                <a href="#collections" class="nav-link text-gray-700 hover:text-pink-500">Collections</a>
-                <a href="#beauty" class="nav-link text-gray-700 hover:text-pink-500">Beauty</a>
-                <a href="#blog" class="nav-link text-gray-700 hover:text-pink-500">Blog</a>
-                <a href="#contact" class="nav-link text-gray-700 hover:text-pink-500">Contact</a>
+
+            <!-- Linen Collection -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm product-hover">
+                <div class="h-64 bg-gray-100 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1472&q=80" alt="Linen Collection" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">Linen Collection</h3>
+                    <p class="text-gray-600 text-sm mb-2">Breathable fabrics for tropical weather</p>
+                    <p class="text-pink-500 font-medium">From ₦18,000</p>
+                </div>
             </div>
-            <div class="flex items-center space-x-4">
-                <a href="#" class="text-gray-700 hover:text-pink-500"><i class="fas fa-shopping-bag"></i></a>
-                <button class="md:hidden focus:outline-none">
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
+
+            <!-- Neutral Tones -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm product-hover">
+                <div class="h-64 bg-gray-100 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1618453292454-e254f2113b48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Neutral Tones" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">Neutral Tones</h3>
+                    <p class="text-gray-600 text-sm mb-2">Earthy colors for effortless matching</p>
+                    <p class="text-pink-500 font-medium">From ₦12,000</p>
+                </div>
+            </div>
+
+            <!-- Minimalist Accessories -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-sm product-hover">
+                <div class="h-64 bg-gray-100 flex items-center justify-center">
+                    <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Minimalist Accessories" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-1">Minimalist Accessories</h3>
+                    <p class="text-gray-600 text-sm mb-2">Subtle jewelry to complete your look</p>
+                    <p class="text-pink-500 font-medium">From ₦8,000</p>
+                </div>
             </div>
         </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="relative h-screen flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')] bg-cover bg-center bg-no-repeat bg-blend-overlay bg-black bg-opacity-20">
-        <div class="container mx-auto px-6 text-center">
-            <h1 class="brand-font text-4xl md:text-6xl font-bold mb-6 text-white">CLEAN GIRL AESTHETIC</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto text-white">Elevate your streetwear with our minimalist fashion & beauty essentials</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <button class="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-8 rounded-full transition transform hover:scale-105">
-                    Shop Now <i class="fas fa-arrow-right ml-2"></i>
-                </button>
-                <button class="bg-white hover:bg-gray-100 text-pink-600 font-medium py-3 px-8 rounded-full transition transform hover:scale-105">
-                    View Lookbook <i class="fas fa-book ml-2"></i>
-                </button>
-            </div>
-            <div class="absolute bottom-10 left-0 right-0 flex justify-center scroll-down">
-                <a href="#about" class="text-white text-3xl">
-                    <i class="fas fa-chevron-down"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Collections Section -->
-    <section id="collections" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="brand-font text-3xl md:text-4xl font-bold mb-4 text-gray-800">Our Collections</h2>
-                <div class="w-20 h-1 bg-pink-400 mx-auto mb-6"></div>
-                <p class="text-lg md:text-xl max-w-3xl mx-auto">Discover our carefully curated seasonal collections designed for the clean girl aesthetic.</p>
-            </div>
-            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm product-hover">
-                    <div class="h-64 bg-gray-100 flex items-center justify-center">
-                        <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80" alt="Streetwear Essentials" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-lg mb-1">Streetwear Essentials</h3>
-                        <p class="text-gray-600 text-sm mb-2">Elevated basics for everyday wear</p>
-                        <p class="text-pink-500 font-medium">From ₦15,000</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm product-hover">
-                    <div class="h-64 bg-gray-100 flex items-center justify-center">
-                        <img src="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1472&q=80" alt="Linen Collection" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-lg mb-1">Linen Collection</h3>
-                        <p class="text-gray-600 text-sm mb-2">Breathable fabrics for tropical weather</p>
-                        <p class="text-pink-500 font-medium">From ₦18,000</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm product-hover">
-                    <div class="h-64 bg-gray-100 flex items-center justify-center">
-                        <img src="https://images.unsplash.com/photo-1602810316599-04c3c2f52c53?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Neutral Tones" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-lg mb-1">Neutral Tones</h3>
-                        <p class="text-gray-600 text-sm mb-2">Earthy colors for effortless matching</p>
-                        <p class="text-pink-500 font-medium">From ₦12,000</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm product-hover">
-                    <div class="h-64 bg-gray-100 flex items-center justify-center">
-                        <img src="https://images.unsplash.com/photo-1625798481157-c39c8e31ec2e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80" alt="Minimalist Accessories" class="w-full h-full object-cover">
-                    </div>
-                    <div class="p-4">
-                        <h3 class="font-bold text-lg mb-1">Minimalist Accessories</h3>
-                        <p class="text-gray-600 text-sm mb-2">Subtle jewelry to complete your look</p>
-                        <p class="text-pink-500 font-medium">From ₦8,000</p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-12">
-                <button class="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white font-medium py-3 px-8 rounded-full transition">
-                    View All Collections <i class="fas fa-arrow-right ml-2"></i>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- (Rest of your site remains unchanged: About, Beauty, Blog, etc.) -->
-
+    </div>
 </body>
 </html>
